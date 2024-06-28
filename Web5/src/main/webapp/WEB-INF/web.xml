@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Web5</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FirstServ</display-name>
+    <servlet-name>FirstServ</servlet-name>
+    <servlet-class>FirstServ</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>file</param-name>
+      <param-value>specialfile</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServ</servlet-name>
+    <url-pattern>/FirstServ</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>Type4</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>SecServ</display-name>
+    <servlet-name>SecServ</servlet-name>
+    <servlet-class>SecServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecServ</servlet-name>
+    <url-pattern>/SecServ</url-pattern>
+  </servlet-mapping>
+</web-app>

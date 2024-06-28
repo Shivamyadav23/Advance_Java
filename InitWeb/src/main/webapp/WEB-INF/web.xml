@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>InitWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>database</param-name>
+    <param-value>MySql</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>First_Serv</display-name>
+    <servlet-name>First_Serv</servlet-name>
+    <servlet-class>First_Serv</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>user</param-name>
+      <param-value>Shivam</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>First_Serv</servlet-name>
+    <url-pattern>/First_Serv</url-pattern>
+  </servlet-mapping>
+</web-app>
